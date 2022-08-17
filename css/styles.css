@@ -27,7 +27,9 @@ h3,
 p,
 ul {
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 0;
+  margin-left: 0;
 }
 ul {
   padding-left: 0;
@@ -54,21 +56,29 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section:nth-child(2) {
+  padding-bottom: 0;
+}
 /* Header */
+
+.nav-list {
+  display: block;
+  padding: 32px 0;
+}
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header > .container,
+
 .nav,
-.nav-list,
-.contact-list {
+.contact-list,
+.header .container,
+.nav-list {
   display: flex;
   align-items: center;
 }
-.header-flex-item:nth-child(2) {
-  margin-left: 93px;
+.header-flex-item:last-child {
+  margin-left: auto;
 }
-
 /* Logo` */
 .header .link {
   font-weight: 500;
@@ -91,6 +101,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .logo-header {
   color: var(--logo-header-color);
@@ -114,8 +125,6 @@ body {
   color: var(--text-secondary-color);
 }
 .nav-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .current {
   color: var(--text-hover-color);
@@ -124,34 +133,38 @@ body {
 .hero {
   background-color: var(--bg-hero-color);
   text-align: center;
+  align-items: center;
+  padding: 200px 0;
 }
-.hero .container {
-  padding-left: 252px;
-  padding-right: 252px;
-}
+
 .hero-title {
+  display: inline;
   color: var(--text-tertiary-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  width: 696px;
 }
+
 .button-order {
+  display: inline-block;
+  margin-top: 30px;
   background-color: var(--bg-button-secondary-color);
   color: var(--text-tertiary-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 .button-order:hover,
 .button-order:focus {
@@ -174,6 +187,7 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 /* What we do */
 .wwd-title,
@@ -193,8 +207,10 @@ body {
 .wwd-item:not(:last-child) {
   margin-right: 30px;
 }
-.no-gap {
+img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Our team */
 .team {
@@ -215,8 +231,10 @@ body {
 .team-member:not(:last-child) {
   margin-right: 30px;
 }
+.team-member-description {
+  padding: 30px 0;
+}
 .team-member-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -224,7 +242,6 @@ body {
   text-align: center;
 }
 .team-member-job {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -244,8 +261,9 @@ body {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -276,6 +294,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .project-example {
   font-size: 16px;
