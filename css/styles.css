@@ -63,7 +63,6 @@ body {
 
 .nav-list {
   display: block;
-  padding: 32px 0;
 }
 .header {
   border-bottom: 1px solid #ececec;
@@ -81,6 +80,8 @@ body {
 }
 /* Logo` */
 .header .link {
+  display: block;
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -131,12 +132,12 @@ body {
 .hero {
   background-color: var(--bg-hero-color);
   text-align: center;
-  align-items: center;
   padding: 200px 0;
 }
 
 .hero-title {
-  display: inline;
+  display: block;
+  margin: 0 auto 30px;
   color: var(--text-tertiary-color);
   font-weight: 900;
   font-size: 44px;
@@ -145,13 +146,11 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
   width: 696px;
 }
 
 .button-order {
   display: inline-block;
-  margin-top: 30px;
   background-color: var(--bg-button-secondary-color);
   color: var(--text-tertiary-color);
   font-weight: 700;
