@@ -124,8 +124,6 @@ body {
 .title {
   color: var(--text-secondary-color);
 }
-.nav-list {
-}
 .current {
   color: var(--text-hover-color);
 }
